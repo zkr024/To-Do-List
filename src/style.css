@@ -1,0 +1,103 @@
+* {
+  font-size: 20px;
+}
+
+section {
+  margin: 100px auto;
+  width: 500px;
+  box-shadow: 1px 1px 15px 8px #888;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+}
+
+.top h2 {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-weight: 300;
+  color: #555;
+}
+
+.load {
+  font-size: 20px;
+  color: #555;
+}
+
+.addListContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+}
+
+.addList {
+  width: 80%;
+  border: none;
+  outline: none;
+}
+
+.add {
+  font-size: 15px;
+  color: #555;
+  margin-right: 3px;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+  position: relative;
+}
+
+.activity p {
+  margin: 0 0 0 10px;
+  width: 70%;
+  outline: none;
+}
+
+.decoration {
+  text-decoration: line-through;
+}
+
+.move,
+.delete {
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  color: #555;
+  margin-right: 15px;
+}
+
+.clearAll {
+  text-decoration: none;
+  color: #777;
+  padding: 10px 0;
+  background-color: #ddd;
+  width: 100%;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
