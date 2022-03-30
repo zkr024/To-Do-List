@@ -28,6 +28,11 @@ section {
   color: #555;
 }
 
+#warning {
+  margin-left: 15px;
+  color: #f00;
+}
+
 .addListContainer {
   display: flex;
   justify-content: space-between;
