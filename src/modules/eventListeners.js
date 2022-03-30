@@ -1,4 +1,6 @@
-import { addListContainer, list, clear, warning } from './variables.js';
+import {
+  addListContainer, list, clear, warning,
+} from './variables.js';
 import Tasks from './class.js';
 
 const tasks = new Tasks();
