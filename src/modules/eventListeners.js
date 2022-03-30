@@ -1,4 +1,6 @@
-import { addListContainer, list, clear } from './variables.js';
+import {
+  addListContainer, list, clear, warning,
+} from './variables.js';
 import Tasks from './class.js';
 
 const tasks = new Tasks();
@@ -6,12 +8,18 @@ const tasks = new Tasks();
 export const newActivity = addListContainer.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
     if (e.target.value === '') {
-      alert('Please enter a task');
+      warning.innerHTML = 'Please enter a task';
+      warning.classList.remove('hide');
+      setTimeout(() => {
+        warning.innerHTML = '';
+        warning.classList.add('hide');
+      }, 2000);
+    } else {
+      const newValue = e.target.value;
+      tasks.addRecord(newValue, false, tasks.activities.length + 1);
+      tasks.local();
+      e.target.value = '';
     }
-    const newValue = e.target.value;
-    tasks.addRecord(newValue, false, tasks.activities.length + 1);
-    tasks.local();
-    e.target.value = '';
   }
 });
 
