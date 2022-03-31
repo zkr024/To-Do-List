@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<body>
+    <section>
+        <div class="top">
+            <h2>Today's To Do</h2>
+            <a href="#">
+                <span class="material-icons-outlined load">sync</span>
+            </a>
+        </div>
+        <div class="addListContainer">
+            <input type="text" class="addList" placeholder="Add to your list">
+            <a>
+                <span class="material-icons-outlined add">subdirectory_arrow_left</span>
+            </a>
+        </div>
+        <small id="warning" class="hide"></small>
+        <div class="listContainer">
+            <ul id ="list">
+                <!-- add dynamic list here... -->
+            </ul>
+            <a class="clearAll" href="#">Clear all completed</a>
+        </div>
+    </section>
+</body>
+</html>
