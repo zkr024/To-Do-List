@@ -23,7 +23,7 @@ Use webpack to compile all the files.
 
 ## Live Demo
 
-[Live Demo](https://zkr024.github.io/To-Do-List/)
+[Click here](https://zkr024.github.io/To-Do-List/)
 
 ## Getting Started
 
